@@ -17,7 +17,7 @@ navigation?.querySelectorAll('a').forEach((link) => {
 });
 
 const translations = {
-  'meta[name="description"]': ['Volt & Ligne conçoit et réalise vos installations électriques, solutions solaires et systèmes de sécurité au Cameroun.', 'Volt & Ligne designs and delivers electrical installations, solar energy solutions and security systems in Cameroon.'],
+  'meta[name="description"]': ['G-house Engineering conçoit et réalise vos installations électriques, solutions solaires et systèmes de sécurité au Cameroun.', 'G-house Engineering designs and delivers electrical installations, solar energy solutions and security systems in Cameroon.'],
   '.main-nav[aria-label]': ['Navigation principale', 'Main navigation'],
   '.main-nav > a:nth-child(1)': ['Expertises', 'Expertise'],
   '.main-nav > a:nth-child(2)': ['Notre approche', 'Our approach'],
@@ -73,7 +73,7 @@ const translations = {
   '.contact-info > div:nth-child(2) p': ['Douala, Cameroun<br>Interventions sur tout le territoire', 'Douala, Cameroon<br>Working nationwide'],
   '.contact-info > div:nth-child(3) span': ['HORAIRES', 'HOURS'],
   '.contact-info > div:nth-child(3) p': ['Lundi – Vendredi<br>08:00 – 17:00', 'Monday – Friday<br>08:00 – 17:00'],
-  '.footer > span': ['© <span id="year"></span> Volt & Ligne. Tous droits réservés.', '© <span id="year"></span> Volt & Ligne. All rights reserved.'],
+  '.footer > span': ['© <span id="year"></span> G-house Engineering. Tous droits réservés.', '© <span id="year"></span> G-house Engineering. All rights reserved.'],
   '.footer > a:last-child': ['RETOUR EN HAUT ↑', 'BACK TO TOP ↑']
 };
 
@@ -118,12 +118,12 @@ function setLanguage(language) {
   if (year) year.textContent = new Date().getFullYear();
   const pageFile = location.pathname.split('/').pop() || 'index.html';
   const metadata = {
-    'index.html': ['Volt & Ligne — Ingénierie électrique', 'Volt & Ligne — Electrical Engineering', 'Volt & Ligne conçoit et réalise vos installations électriques, solutions solaires et systèmes de sécurité au Cameroun.', 'Volt & Ligne designs and delivers electrical installations, solar energy solutions and security systems in Cameroon.'],
-    'about.html': ['À propos — Volt & Ligne', 'About — Volt & Ligne', 'Découvrez Volt & Ligne, entreprise d’ingénierie électrique au Cameroun.', 'Meet Volt & Ligne, an electrical engineering company in Cameroon.'],
-    'services.html': ['Services & produits — Volt & Ligne', 'Services & products — Volt & Ligne', 'Installations électriques, solaire et sécurité : découvrez les services et produits Volt & Ligne.', 'Electrical installations, solar and security: explore Volt & Ligne services and products.'],
-    'projects.html': ['Projets — Volt & Ligne', 'Projects — Volt & Ligne', 'Quelques projets électriques, solaires et de sécurité réalisés par Volt & Ligne.', 'Selected electrical, solar and security projects by Volt & Ligne.'],
-    'blog.html': ['Journal — Volt & Ligne', 'Journal — Volt & Ligne', 'Conseils pratiques et actualités autour de l’électricité, du solaire et de la sécurité.', 'Practical advice and news about electrical systems, solar energy and security.'],
-    'contact.html': ['Contact — Volt & Ligne', 'Contact — Volt & Ligne', 'Contactez Volt & Ligne pour vos projets d’ingénierie électrique, solaire et sécurité.', 'Contact Volt & Ligne about your electrical engineering, solar and security projects.']
+    'index.html': ['G-house Engineering — Ingénierie électrique', 'G-house Engineering — Electrical Engineering', 'G-house Engineering conçoit et réalise vos installations électriques, solutions solaires et systèmes de sécurité au Cameroun.', 'G-house Engineering designs and delivers electrical installations, solar energy solutions and security systems in Cameroon.'],
+    'about.html': ['À propos — G-house Engineering', 'About — G-house Engineering', 'Découvrez G-house Engineering, entreprise d’ingénierie électrique au Cameroun.', 'Meet G-house Engineering, an electrical engineering company in Cameroon.'],
+    'services.html': ['Services & produits — G-house Engineering', 'Services & products — G-house Engineering', 'Installations électriques, solaire et sécurité : découvrez les services et produits G-house Engineering.', 'Electrical installations, solar and security: explore G-house Engineering services and products.'],
+    'projects.html': ['Projets — G-house Engineering', 'Projects — G-house Engineering', 'Quelques projets électriques, solaires et de sécurité réalisés par G-house Engineering.', 'Selected electrical, solar and security projects by G-house Engineering.'],
+    'blog.html': ['Journal — G-house Engineering', 'Journal — G-house Engineering', 'Conseils pratiques et actualités autour de l’électricité, du solaire et de la sécurité.', 'Practical advice and news about electrical systems, solar energy and security.'],
+    'contact.html': ['Contact — G-house Engineering', 'Contact — G-house Engineering', 'Contactez G-house Engineering pour vos projets d’ingénierie électrique, solaire et sécurité.', 'Contact G-house Engineering about your electrical engineering, solar and security projects.']
   }[pageFile];
   if (metadata) {
     document.title = metadata[language === 'fr' ? 0 : 1];

@@ -1,4 +1,4 @@
-# Volt & Ligne — static website
+# G-house Engineering — static website
 
 A bilingual (French/English) company showcase site built with plain HTML, CSS and JavaScript. It has no framework, package manager, server-side code or build step.
 
